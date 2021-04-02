@@ -17,7 +17,7 @@ import java.util.Random;
  */
 public class Explosion {
 
-    final int particleNum = 40;
+    final int particleNum = 20;
 
     ArrayList<Particle> particles = new ArrayList<>();
 
@@ -67,9 +67,9 @@ public class Explosion {
 
     public class Particle {
 
-        final int SIZE = 20;
+        final int SIZE = 10;
         final double MAX_SPEED = 30;
-        final double DECELERATION = 0;
+        final double DECELERATION = 1;
 
         Color COLOR;
 

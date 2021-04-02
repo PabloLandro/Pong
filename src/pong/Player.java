@@ -14,7 +14,7 @@ public class Player {
     
     public final static int width = 20;
     public final static int height = 200;
-    public final static int speed = 2;
+    public final static int speed = 4;
     int x;
     int y;
     int dir;

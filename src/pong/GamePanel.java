@@ -19,8 +19,8 @@ public class GamePanel extends JPanel implements ActionListener{
     public static final int SCREEN_WIDTH = 1000;
     public static final int SCREEN_HEIGHT = 700;
     static final int BALL_SIZE = 20;
-    static final float BALL_SPEED_MAX = 3.3f;
-    static final float BALL_SPEED_INI = 1;
+    static final float BALL_SPEED_MAX = 10;
+    static final float BALL_SPEED_INI = 7;
     static final int delay = 1;
     static final int PLAYER_BORDER_OFFSET = 30;
     static final int SCORE_WAIT = 1000;
@@ -184,7 +184,7 @@ public class GamePanel extends JPanel implements ActionListener{
     
     public void pointScored(Player player){
         player.addScore(1);
-        explosions.add(new Explosion(new Point(ballX, ballY)));
+        explosions.add(new Explosion(new Point(ballX, ballY), ballColor));
         player1.posIni();
         player2.posIni();
         player3.posIni();
